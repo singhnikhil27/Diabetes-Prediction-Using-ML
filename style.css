@@ -1,0 +1,520 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400&display=swap');
+
+* {
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+
+:root {
+    --gradient: linear-gradient(90deg, var(--red), var(--coral));
+    --red: #ed176f;
+    --coral: #f7817f;
+    --dark: #272d3b;
+}
+
+*::selection {
+    background-color: var(--red);
+    color: white;
+}
+
+html {
+    font-size: 62.5%;
+    /*MUST*/
+    overflow-x: hidden;
+    /* scroll-behavior: smooth; */
+    /* scroll-padding-top: 4rem; */
+}
+
+header {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* line-height: 5rem ;  look */
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    padding: 2rem 9%;
+    background-color: var(--dark);
+    border-bottom: 1px solid grey;
+
+}
+
+section {
+    padding: 3rem 9%;
+}
+
+
+
+header .logo {
+    font-weight: bolder;
+    color: aliceblue;
+    font-size: 2.3rem;
+}
+
+header nav>#subscribe {
+    background-color: #ed176f;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    font-weight: bold;
+}
+
+
+header nav>#subscribe:hover {
+    color: var(--red);
+    background-color: white;
+    font-size: 1.6rem;
+}
+
+/* If we access nav, the properties will not work */
+header nav a {
+    color: #ffffff;
+    font-size: 1.5rem;
+    padding: 0 2rem;
+}
+
+header nav a:hover {
+    color: var(--red);
+    font-size: 1.6rem;
+}
+
+header #menu-bar {
+    max-width: 100%;
+    color: white;
+    cursor: pointer;
+    font-size: 2.5rem;
+    display: none;
+    float: right;
+}
+
+/* HOME CSS */
+
+
+
+.home {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+
+    background: url(images/home-bg.jpg) no-repeat;
+    background-size: cover;
+    width: 100%;
+    background-position: center;
+    min-height: 100vh;
+    text-align: center;
+}
+
+.home .homeContent {
+    display: flex;
+    flex-direction: column;
+    padding-top: 5rem;
+    /* width: 70vh; */
+    margin: 0 auto;
+    align-items: center;
+}
+
+
+.home .homeContent>h3 {
+    color: white;
+    font-size: 6rem;
+}
+
+.home .homeContent>p {
+    padding-top: 2rem;
+    color: #eee;
+    font-size: 1.7rem;
+    text-align: center;
+    text-transform: none;
+}
+
+.homeBtn {
+    display: inline-block;
+    padding: 3rem 7rem;
+    margin-bottom: 0;
+    margin: 5rem;
+    cursor: pointer;
+    border-radius: 5rem;
+    background: var(--gradient);
+    color: #fff;
+    font-size: 1.7rem;
+}
+
+
+.homeBtn:hover {
+    transform: scale(1.1);
+    background: var(--dark);
+    color: #fff;
+}
+
+
+
+
+.home .swiper-container {
+    position: relative;
+    width: 100%;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.home .swiper-slide {
+    width: 30rem;
+    height: 50rem;
+}
+
+.home .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-wrapper img {
+    border-radius: 2rem;
+
+}
+
+/* about us  */
+.aboutUs {
+    display: flex;
+    background-color: #fff;
+    gap: 6rem;
+    /* border-bottom: 1px solid var(--red); */
+
+
+
+}
+
+.aboutUs>Img {
+    max-width: 50%;
+    height: 80vh;
+    border: 3rem;
+    border-radius: 5rem;
+
+
+}
+
+.aboutUs .aboutText {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem
+}
+
+.aboutUs .aboutText>h1 {
+    position: relative;
+    top: 2rem;
+    text-align: center;
+    font-size: 6rem;
+    font-weight: bolder;
+    color: var(--red);
+}
+
+
+.aboutUs .aboutText>h4 {
+    font-size: 1.7rem;
+    text-align: justify;
+
+}
+
+/* why choose us  */
+.whyChooseUs > h1 {
+    font-size: 6rem;
+    color: #ed176f;
+    text-align: center;
+    /* margin-top: 2rem; */
+    background-color: white;
+} 
+
+.blocks {
+    display: flex;
+    gap: 3rem;
+    margin-top: 5rem;
+    cursor: pointer;
+   
+
+}
+
+.block1,
+.block2,
+.block3,
+.block4 {
+    background-image:var(--gradient);
+    border-radius: 2rem;
+    padding: 3rem;
+    width: fit-content;
+    margin-bottom: 4rem;
+}
+
+
+
+.whyChooseUs .blocks h1 {
+    padding: 2rem;
+    font-size: 2rem;
+    text-align: center;
+    color: var(--red);
+    background-color: white;
+    border-radius: 2rem;
+    
+    /* box-shadow: rgb(169, 169, 169) 3px 3px; */
+   }
+   
+   .block1:hover ,
+   .block2:hover ,
+   .block3:hover ,
+   .block4:hover {
+    transform: scale(1.1);
+   }
+
+.whyChooseUs .blocks h4 {
+    color: #d7d7d7;
+    text-align: justify;
+    margin-top: 4rem;
+    font-size: 1.6rem;
+    text-transform: none;
+
+}
+
+/* Prediction */
+
+.prediction{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* padding-top: 9rem; */
+    gap : 4rem;
+    background-image: url('images/home-bg.jpg');
+    background-size: cover;
+    width: 100%;
+    background-position: center;
+    min-height: 100vh;
+  
+}
+
+.prediction > h1{
+    padding-top: 2rem;
+    font-size: 6rem;
+    color: #ff3187;
+
+}
+
+.prediction .disclaimer {
+    font-size: 1.7rem;
+    color: white;
+    text-align: justify;
+    text-transform: none;
+}
+.diabetesform{
+    border: 2px solid rgb(61, 61, 61);
+    font-size: 1.7rem;
+    color:black;
+    background-color:white;
+    margin-bottom: 6rem;
+    padding : 5rem;
+    border-radius: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: #4f4f4f 4px 4px;
+
+}
+
+input{
+    color: #272d3b;
+    background-color: rgb(240, 240, 240);
+    margin-top: 2rem;
+    padding: 1rem 4rem;
+    border-radius: 2rem;
+}
+.diabetesdatasettestbutton{
+    padding: 2rem 7rem;
+    margin-bottom: 0;
+    margin: 5rem;
+    cursor: pointer;
+    border-radius: 5rem;
+    background: var(--gradient);
+    color: #fff;
+    font-size: 1.7rem;
+}
+
+.diabetesdatasettestbutton:hover {
+    transform: scale(1.1);
+    background: var(--dark);
+    color: #fff;
+}
+
+/* FOOTER */
+
+.footer{
+    background-color: var(--dark);
+    margin: 0;
+  
+}
+
+footer { 
+    display: flex;
+    gap : 10rem;
+}
+
+.footer footer .footerLeft > a{
+    font-size: 5rem;
+    color: white;
+}
+footer .footerLeft > p{
+    font-size: 1.7rem;
+    color: white;
+    width: 60%;
+    text-align: justify;
+}
+footer .links ul{
+    margin-top: 4rem;
+}
+footer .links ul li {
+    text-decoration: none;
+    padding: 1rem 0;
+    list-style: none;
+   
+
+}
+footer .links ul li a{
+    color: #d7d7d7;
+    font-size: 1.7rem;
+   
+}
+
+/* copyright */
+.copyright{
+    color: var(--red);
+    padding-top : 3rem ;
+    font-size: 2rem;
+}
+  @media screen and (max-width: 850px) {
+    .row.primary {
+      grid-template-columns: 1fr;
+    }
+  
+  }
+/* Media Queries  */
+
+@media(max-width:991px) {
+    html {
+        font-size: 55%;
+        /*MUST*/
+    }
+
+    header {
+        padding: 2rem 4%;
+    }
+}
+
+
+@media(max-width:768px)
+
+/* make menu btn visible================================== */
+    {
+    header #menu-bar {
+        display: block;
+    }
+
+    header .nav {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        border-top: 1px solid grey;
+        padding: 1rem 2rem;
+        background-color: var(--dark);
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+
+    }
+
+    header .nav.nav-toggle {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+
+    header .nav a {
+        display: block;
+        background: var(--gradient);
+        padding: 1rem;
+        text-align: center;
+        margin: 2rem 2rem;
+        border-radius: 2rem;
+
+
+
+    }
+
+
+
+    header .nav a:hover {
+        color: var(--dark);
+    }
+
+    .fa-times {
+        transform: rotate(180deg);
+    }
+
+   .blocks{
+    display: flex;
+    flex-direction: column;
+   }
+
+
+    /* confusion */
+
+    .home .homeContent h3 {
+        font-size: 4rem;
+
+    }
+
+    .home .homeContent p {
+        font-size: 1.5rem;
+    }
+
+    .aboutUs>Img {
+
+        max-width: 85%;
+        height: auto;
+    }
+
+    .aboutUs {
+        display: flex;
+        flex-direction: column;
+        gap: 6rem;
+        align-items: center;
+        justify-content: center;
+    
+    
+    
+    }
+    
+
+
+}
+
+@media(max-width:991px) {
+    html {
+        font-size: 50%;
+        /*MUST*/
+    }
+
+    header {
+        padding: 2rem 4%;
+    }
+
+
+
+}
+
+@media (max-width : 400px) {
+    html {
+        font-size: 50%;
+    }
+}

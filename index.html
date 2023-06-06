@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+</head>
+
+<body>
+    <!-- header -->
+    <header class="header">
+        <a class="logo">Predict<span style="color: #ff4391 ;">Well</span></a>
+
+        <div id="menu-bar" class="fas fa-bars"></div>
+
+        <nav class="nav">
+            <a href="#home">HOME</a>
+            <a href="#about">ABOUT</a>
+            <a href="#prediction">PREDICTION</a>
+            <a href="#preformane">PERFORMANCE</a>
+            <a href="#blogs">BLOGS </a>
+            <a id="subscribe" href="#">LOGIN</a>
+        </nav>
+    </header>
+
+    <!-- home -->
+
+    <section class="home" id="home">
+        <div class="homeContent">
+            <h3>Welcome to Predict<span style="color: #ff4391 ;">Well</span> !</h3>
+            <p class="homePara">Your one-stop destination for accurate disease prediction and prevention.
+
+                At Predict Well, we understand the importance of early detection and prevention when it comes to
+                managing diseases. Our innovative website combines cutting-edge technology with medical expertise to
+                empower you with the knowledge you need to take control of your health. It's important to note that
+                these facts represent general knowledge that many people are aware of when it comes to managing
+                diabetes.</p>
+
+        </div>
+
+        <div class="swiper-container image-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="images/shot-01.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="images/shot-02.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="images/shot-03.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="images/shot-04.jpg" alt=""></div>
+
+                <!-- <div class="swiper-slide"><img src="images/shot-05.jpg" alt=""></div> -->
+            </div>
+
+            <a href="#" class="homeBtn">Test Now </a>
+    </section>
+
+
+    <section class="aboutUs" id="about">
+
+        <img class="aboutImg" src="images/aboutImg.jpg" alt="">
+        <div class="aboutText">
+            <h1>About Us</h1>
+            <h4> At Predict Well, we understand the importance of early detection and prevention when it comes to
+                managing diseases. Our innovative website combines cutting-edge technology with medical expertise to
+                empower you with the knowledge you need to take control of your health. It's important to note that
+                these facts represent general knowledge that many people are aware of when it comes to managing
+                diabetes.
+                At Predict Well, we understand the importance of early detection and prevention when it comes to
+                managing diseases. Our innovative website combines cutting-edge technology with medical expertise to
+                empower you with the knowledge you need to take control of your health. It's important to note that
+                these facts represent general knowledge that many people are aware of when it comes to managing
+                diabetes.
+                At Predict Well, we understand the importance of early detection and prevention when it comes to
+                managing diseases. Our innovative website combines cutting-edge technology with medical expertise to
+                empower you with the knowledge you need to take control of your health. It's important to note that
+                these facts represent general knowledge that many people are aware of when it comes to managing
+                diabetes.
+
+            </h4>
+        </div>
+
+    </section>
+
+    <!-- wwhy choose us ? -->
+
+    <section class="whyChooseUs">
+
+        <h1>Why Choose Us !</h1>
+        <div class="blocks">
+            <div class="block1">
+                <h1>Advanced Prediction Algorithms</h1>
+                <h4> Our website utilizes state-of-the-art prediction algorithms based on extensive research and data
+                    analysis. We have developed a sophisticated model that takes into account a wide range of risk
+                    factors,
+                    including age, family history, lifestyle, and medical history. By inputting your relevant
+                    information,
+                    our system can assess your likelihood of developing diabetes, helping you take preventive measures
+                    early
+                    on.</h4>
+            </div>
+            <div class="block2">
+                <h1>Personalized Recommendations</h1>
+                <h4>We understand that every individual is unique, and health management should be personalized. Our
+                    platform generates customized recommendations based on the user's specific risk factors, offering
+                    practical strategies to mitigate health risks, improve overall well-being, and achieve long-term
+                    success.</h4>
+            </div>
+            <!-- <div class="block3">
+                <h1>Easy-to-Use Interface</h1>
+                <h4> We understand that accessibility and user-friendliness are paramount when it comes to
+                    health-related platforms. Our website boasts a clean and intuitive interface, making it effortless
+                    for users of all backgrounds to navigate and input their data. You can quickly and conveniently
+                    provide the necessary information to receive an accurate prediction of your diabetes risk.</h4>
+            </div> -->
+            <div class="block4">
+                <h1>Continual Enhancements</h1>
+                <h4> Our commitment to providing the best service extends to regular updates and enhancements. We
+                    constantly improve our algorithms, incorporate the latest research findings, and refine our
+                    recommendations to ensure that you receive the most accurate and up-to-date information about
+                    diabetes detection and prediction.
+
+                </h4>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="prediction" id="prediction">
+
+        <h1>Diabetes Prediction</h1>
+        <div class="disclaimer">Disclaimer: While our predictive analysis is backed by extensive research and advanced
+            algorithms, it is important to remember that no system is infallible. We always recommend consulting with
+            healthcare professionals for accurate diagnoses, medical advice, and treatment plans.</div>
+        <form class="diabetesform" action="" method="get">
+            <form>
+                <table>
+                    <tr>
+                        <td>
+                            <label for="pregnancies">Pregnancies:</label>
+                        </td>
+                        <td>
+                            <input type="number" id="pregnancies" name="pregnancies" required><br><br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="glucose">Glucose Level (mg/dL):</label>
+                        </td>
+                        <td>
+                            <input type="number" id="glucose" name="glucose" required><br><br>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="blood-pressure">Blood Pressure (mmHg):</label>
+                        </td>
+                        <td>
+                            <input type="number" id="blood-pressure" name="blood-pressure" required><br><br>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="skin-thickness">Skin Thickness (mm):</label>
+                        </td>
+                        <td>
+                            <input type="number" id="skin-thickness" name="skin-thickness" required><br><br>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="insulin">Insulin Level (mu U/ml):</label>
+                        </td>
+                        <td>
+                            <input type="number" id="insulin" name="insulin" required><br><br>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="bmi">BMI:</label>
+                        </td>
+                        <td>
+                            <input type="number" id="bmi" name="bmi" required><br><br>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="dpf">Diabetes Pedigree Function:</label>
+                        </td>
+                        <td>
+                            <input type="number" id="dpf" name="dpf" required><br><br>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="age">Age (years):</label>
+                        </td>
+                        <td>
+                            <input type="number" id="age" name="age" required><br><br>
+                        </td>
+                    </tr>
+                </table>
+                <input class="diabetesdatasettestbutton" type="submit" value="TEST">
+            </form>
+        </form>
+    </section>
+    </div>
+    </div>
+
+    <section class="footer">
+        <footer>
+            <div class="footerLeft">
+                <a class="logo">Predict<span style="color: #ff4391 ;">Well</span></a>
+                <p>Take charge of your health today and discover the incredible potential within you. Join us at Predict
+                    Well and let's create a healthier tomorrow, one prediction at a time!Take charge of your health
+                    today and discover the incredible potential within you. Join us at Predict Well and let's create a
+                    healthier tomorrow, one prediction at a time!
+            </div>
+            <div class="links">
+                <ul>
+                    <li><a href="#">Credit</a></li>
+                    <li><a href="#">Team</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Blog</a></li>
+
+                </ul>
+            </div>
+
+           
+        </footer>
+        <p class="copyright"> © 2023 PredictWell</p>
+    </section>
+    <!-- Java Script -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>
